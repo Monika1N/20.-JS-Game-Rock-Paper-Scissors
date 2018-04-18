@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&subset=latin-ext');
+
+/* Global styles*/
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #98cdd6;
+}
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* Welcome to the game */
+h3 {
+	font-size: 40px;
+	font-weight: bold;
+	color: #444440;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.label-default {
+	background-color: #6b6d62;
+}
+.label-info {
+	background-color: #d1ceca;
+}
+.laber-danger {
+	background-color: #ce5f5f;
+}
+#js-newGameButton {
+	background-color: #444440;
+	color: white;
+	font-size: 30px;
+	border-radius: 10px;
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+/* Player pick */
+.btn {
+	background-color: #406c72;
+	color: white;
+	border-radius: 10px;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+.badge {
+	background-color: #444440;
+	font-size: 30px;
+}
+/* Result */
+.col-xs-5, .col-xs-2 {
+	font-size: 25px;
+}
+#js-playerName {
+	font-weight: bold;
+}
