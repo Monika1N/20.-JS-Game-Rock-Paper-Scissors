@@ -113,7 +113,10 @@ function checkRoundWinner(playerPick, computerPick) {
         computer.score++;
     }
     setGamePoints();
+    checkGameWinner();
 }
+
+
 
 function setGamePoints() {
     playerPointsElem.innerHTML = player.score;
@@ -121,23 +124,20 @@ function setGamePoints() {
 }
 
 //Winner of the game
+
+var finishResult = document.getElementById('js-finishResult');
+
 function checkGameWinner() {
     if (player.score == 10) {
-    var playerWinner;
-    playerWinner = "You won the result " + player.score + " : " + computer.score + "!";
+    finishResult.innerHTML = "You won the result " + player.score + " : " + computer.score + "!";
     gameState = 'ended';
     } else if (computer.score == 10) {
-        var computerWinner;
-        computerWinner = "You lost the result" + computer.score + " : " + player.score + "!";
+        finishResult.innerHTML = "You lost the result " + computer.score + " : " + player.score + "!";
         gameState = 'ended';   
-    } else if (player.score == 10 && computer.score == 10) {
-        var gameDraw;
-        gameDraw = "The game ended in a draw!";
-        gameState = 'ended'
     }
+    finishResult.appendChild(finishResult.innerHTML);
     setGameElements();
 }
 
-checkGameWinner();
 
 
