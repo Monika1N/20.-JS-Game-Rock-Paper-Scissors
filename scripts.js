@@ -47,6 +47,10 @@ function setGameElements() {
     case 'ended'://gdy gra się zakończy
         newParagraph.style.display = 'block';
         newGameBtn.innerText = 'Play again';//plansza New Game widoczna, ale zmienia się tekst na Play Again
+        playerPickElem.innerHTML = '';
+        computerPickElem.innerHTML = '';
+        playerResultElem.innerHTML = '';
+        computerResultElem.innerHTML = '';
     case 'notStarted'://gra się nie rozpoczęła
     default:
         newGameElem.style.display = 'block';//plansza New Game widoczna
